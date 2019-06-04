@@ -10,17 +10,29 @@ description: Course covers the bioinformatics tools available for managing and i
 instructors: Jared Simpson, Guillaume Bourque, Pascale Marquis
 length: 2 days
 ---
+
 # Welcome <a id="welcome"></a>
 
-Welcome to Informatics on High-Throughput Sequencing Data 2019.  
+Welcome to Informatics for High-throughput Sequencing Data 2019 workshop.  
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_schedule).
 
-Pre-readings, pre-work, and laptop setup instructions can be found [here](https://bioinformaticsdotca.github.io/HTseq_2018_prework).  
+Meet your faculty [here]()
 
-We are using Slack for discussion. 
+**CLASS MATERIALS:** You can download and print the course manual [here]().  
 
-The full course notes are available as a [single PDF]().  
+***
+
+# Pre-Workshop Materials <a id="preworkshop"></a>
+
+## Laptop Setup Instructions
+
+Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_installation).
+
+## Pre-workshop Tutorials
+
+Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/htseq_2019_prework).  
+It is in your best interest to complete these before the workshop.
 
 ***
 
