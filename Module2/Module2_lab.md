@@ -1,17 +1,16 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_2019_Module3_lab
-title: BiCG
+permalink: /htseq_2019_module2_lab
+title: HTseq Module 2 Lab
 header1: Workshop Pages for Students
-header2: Bioinformatics for Cancer Genomics 2019
-image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/BiCG_2019
-description: BiCG Module 3 Lab
+header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 2 Lab
+image: /site_images/CBW_High-throughput_icon.jpg
+home: https://bioinformaticsdotca.github.io/htseq_2019
 author: Sorana Morrissy, Florence Cavalli and Heather Gibling
 modified: June 2, 2019
 ---
 
-# BiCG Module 3 - IGV lab
+# HTseq Module 2 - IGV lab
 
 This lab was created by Sorana Morrissy, then modified by Florence Cavalli and Heather Gibling
 
