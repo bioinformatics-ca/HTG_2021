@@ -94,7 +94,7 @@ Coming soon.
 
 [Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/HTSeq_2018_module6_lab)
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab)
 
 [Supplemental](https://bioinformaticsdotca.github.io/HTSeq_2018_module6_lab_supplement)
 
