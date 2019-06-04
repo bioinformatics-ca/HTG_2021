@@ -60,7 +60,7 @@ Coming soon.
 
 [Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/HTSeq_2018_module2_lab)
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab)
 
 ## Module 3: Genome Alignment
 
@@ -74,11 +74,11 @@ Coming soon.
 
 * We have set up 30 instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. If you plan on using Linux or Mac OS X, please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.pem). Otherwise if you plan on using Windows (with Putty and Winscp), please download [this certificate](http://main.oicrcbw.ca/private/CBWNY.ppk).
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2018_module3_lab)  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module3_lab)  
 
 ## Integrated Assignment
 
-[Integrated Assignment](https://bioinformaticsdotca.github.io/HTSeq_2018_IA_lab)  
+[Integrated Assignment](https://bioinformaticsdotca.github.io/htseq_2019_IA)  
 
 ***
 
@@ -90,7 +90,7 @@ Coming soon.
 
 [Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2018_module4_lab)  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module4_lab)  
 
 ## Module 5: Structural Variant Calling
 
@@ -98,7 +98,7 @@ Coming soon.
 
 [Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2018_module5_lab)  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
 
 ## Module 6: De Novo Assembly
 
@@ -108,7 +108,7 @@ Coming soon.
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab)
 
-[Supplemental](https://bioinformaticsdotca.github.io/HTSeq_2018_module6_lab_supplement)
+[Supplemental](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab_supplement)
 
 ***
 
