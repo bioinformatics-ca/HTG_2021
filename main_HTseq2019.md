@@ -1,6 +1,6 @@
 ---
 layout: workshop_main_2day
-permalink: /HTseq_2019
+permalink: /htseq_2019
 title: HTseq
 header1: Workshop Pages for Students
 header2: Informatics on High-Throughput Sequencing Data
