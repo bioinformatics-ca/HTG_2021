@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /HTSeq_2018_module6_lab
+permalink: /htseq_2019_module6_lab
 title: HTSeq Lab 6
 header1: Workshop Pages for Students
 header2: Informatics on High-Throughput Sequencing Data
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2018
+home: https://bioinformaticsdotca.github.io/htseq_2019
 description: HTSeq Lab 6
 author: Jared Simpson
 modified: May 26th, 2018
