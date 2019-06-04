@@ -14,7 +14,7 @@ length: 2 days
 
 Welcome to Informatics on High-Throughput Sequencing Data 2019.  
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2018_schedule).
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_schedule).
 
 Pre-readings, pre-work, and laptop setup instructions can be found [here](https://bioinformaticsdotca.github.io/HTseq_2018_prework).  
 
