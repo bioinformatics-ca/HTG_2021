@@ -19,8 +19,8 @@ home: https://bioinformaticsdotca.github.io/htseq_2019
 | 11:30 | <font color="blue">Module 2 Lab</font> | 11:30 | <font color="green">*Lunch*</font> |
 | 12:30 | <font color="green">*Lunch*</font> | 12:30 | <font color="purple">Module 5: Structural Variant Calling (Guillaume Bourque)</font> |
 | 1:30 | <font color="purple">Module 3: Genome Alignment (Guillaume Bourque) </font> | 1:30 | <font color="blue">Module 5 Lab (Pascale Marquis)</font> |
-| 2:30 | <font color="blue">Connecting to the Cloud (Zhibin Lu)</font> | 1:30 | <font color="purple">Module 6: De Novo Assembly (Jared Simpson)</font> |
-| 3:00 | <font color="green">*Coffee Break*</font> | 2:30 | <font color="green">*Coffee Break*</font> |
-| 3:30 | <font color="blue">Module 3 Lab (Pascale Marquis)</font> | 3:00 | <font color="blue">Module 6 Lab (Jared Simpson)</font> |
-| 5:00 | <font color="green">*Dinner*</font> | 5:00 | <font color="purple">Survey and Closing Remarks (Michelle)</font> |
+| 2:30 | <font color="blue">Connecting to the Cloud (Zhibin Lu)</font> | 2:30 | <font color="green">*Coffee Break*</font> |
+| 3:00 | <font color="green">*Coffee Break*</font> | 3:00 | <font color="purple">Module 6: De Novo Assembly (Jared Simpson)</font> |
+| 3:30 | <font color="blue">Module 3 Lab (Pascale Marquis)</font> | 4:00 | <font color="blue">Module 6 Lab (Jared Simpson)</font> |
+| 5:00 | <font color="green">*Dinner*</font> | 5:30 | <font color="purple">Survey and Closing Remarks (Michelle)</font> |
 | 6:00 | **Integrated Assignment (optional to 8:00)(Robert Syme)** | | |
