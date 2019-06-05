@@ -1,4 +1,13 @@
-# BiCG Module 3 - IGV lab
+---
+layout: tutorial_page
+permalink: /htseq_2019_Module2_lab_answers
+title: HTseq Module 2 Lab Answers
+header1: Workshop Pages for Students
+header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 2 Lab Answers
+image: /site_images/CBW_High-throughput_icon.jpg
+home:
+
+# Module 2 - IGV Lab Answers
 
 ## Suggested Answers
 
