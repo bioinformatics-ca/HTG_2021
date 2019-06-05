@@ -84,7 +84,7 @@ Discussion/Questions:
 
 
 
-The full commands can be downloaded here [solution](https://github.com/bioinformaticsdotca/HTSeq_2018/blob/master/Integrated%20Assignment/integrative_assigment_commands.sh)
+The full commands can be downloaded here [solution](https://github.com/bioinformaticsdotca/HTseq_2019/blob/master/IntegratedAssignment/integrative_assigment_commands.sh)
 
 
 
