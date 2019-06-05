@@ -78,7 +78,7 @@ Coming soon.
 
 ## Integrated Assignment
 
-[Integrated Assignment](https://bioinformaticsdotca.github.io/htseq_2019_IA)  
+[Integrated Assignment](https://bioinformaticsdotca.github.io/htseq_2019_IA)    
 
 ***
 
