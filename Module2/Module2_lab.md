@@ -388,5 +388,5 @@ Now navigate to position "chr21:19,790,758-19,790,965"
 
 ## Resources
 
-* [Suggested answers to the questions from this lab](https://github.com/bioinformaticsdotca/BiCG_2019/blob/master/Module3/Module3_lab_answers.md)
+* [Suggested answers to the questions from this lab](https://github.com/bioinformaticsdotca/htseq_2019_Module2_lab_answers)
 * [IGV user manual](http://software.broadinstitute.org/software/igv/UserGuide)
