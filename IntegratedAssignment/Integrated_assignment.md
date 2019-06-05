@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /HTSeq_2018_IA_lab
-title: HTSeq Integrated Assignment
+permalink: /htseq_2019_IA
+title: HTseq Integrated Assignment
 header1: Workshop Pages for Students
-header2: Informatics on High-Throughput Sequencing Data
+header2: Informatics for High-throughput Sequencing Data Analysis 2019 Integrated Assignment
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2018
+home: https://bioinformaticsdotca.github.io/htseq_2019
 ---
 
 
