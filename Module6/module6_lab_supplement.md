@@ -1,12 +1,12 @@
 ---
 layout: tutorial_page
-permalink: /BiCG_2019_Module5_lab_supplemental
-title: BiCG
+permalink: /htseq_2019_module6_lab_supplement
+title: HTseq 2019 Module 6 Lab Supplement
 header1: Workshop Pages for Students
-header2: Bioinformatics for Cancer Genomics 2019
-image: /site_images/CBW_cancerDNA_icon-16.jpg
-home: https://bioinformaticsdotca.github.io/BiCG_2019
-description: BiCG Module 5 Lab Supplemental
+header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 6 Lab Supplement
+image: /site_images/CBW_High-throughput_icon.jpg
+home: https://bioinformaticsdotca.github.io/htseq_2019
+description: HTseq 2019 Module 6 Lab Supplemental
 author: Jared Simpson
 modified: June 27th, 2018
 ---
