@@ -1,1 +1,0 @@
--H is used to only output the header of the BAM/SAM file.

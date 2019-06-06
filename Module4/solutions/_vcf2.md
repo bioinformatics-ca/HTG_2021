@@ -1,1 +1,0 @@
-No the ID field is empty and no functional information is provided

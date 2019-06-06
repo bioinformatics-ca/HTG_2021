@@ -1,1 +1,0 @@
-The variant is a 1 bp deletion that disrupt the sequence of the exome 10  of the PADI6 gene. The deletion is homozygous and does not seems to involve supicous reads.
