@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
 permalink: /htseq_2019_module4_lab
-title: HTSeq Lab 4
+title: HTSeq Module 4 Lab
 header1: Workshop Pages for Students
 header2: Informatics on High-Throughput Sequencing Data Module 4 Lab
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2018
+home: https://bioinformaticsdotca.github.io/htseq_2019
 ---
 
 -----------------------
