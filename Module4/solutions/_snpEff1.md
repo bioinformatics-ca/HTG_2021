@@ -1,0 +1,1 @@
+This variant (T>C) is located in an intron of the PADI6 gene and is probably not affecting the fonction of the gene. 
