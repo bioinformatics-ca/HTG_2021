@@ -1,0 +1,3 @@
+[submodule "CBW_HTseq_module3"]
+	path = CBW_HTseq_module3
+	url = https://github.com/mbourgey/CBW_HTseq_module3
