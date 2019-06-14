@@ -328,7 +328,7 @@ The IGV screenshots are in the screenshots output directory you set. Have a look
 
 Long reads aligned to a reference genome can be visualized like short reads, but true variants might be hard to find among the noise from increased sequencing error rates in long-read sequencing technologies. We will view some reads obtained from Oxford Nanopore sequencing provided by [Miten Jain](https://github.com/mitenjain/NA12878/blob/master/nanopore-human-genome/rel_3_4.md) from the recent publication [Nanopore sequencing and assembly of a human genome with ultra-long reads](https://www.nature.com/articles/nbt.4060). 
 
-Before getting started, **remove the tracks for HCC1143.normal.21.19M-20M.bam (both the alignment track and the coverage track)**. We will be using a different reference genome, so these reads will no longer be properly aligned. Change the reference genome in the top right corner to **Human (hg38)**. If this option isn't available you will need to download it. Selct *More*, then scroll down and select *Human hg38*.
+Before getting started, **remove the tracks for HCC1143.normal.21.19M-20M.bam (both the alignment track and the coverage track)**. We will be using a different reference genome, so these reads will no longer be properly aligned. Change the reference genome in the top left corner to **Human (hg38)**. If this option isn't available you will need to download it. Selct *More*, then scroll down and select *Human hg38*.
 
 
 ### Data for long reads:
