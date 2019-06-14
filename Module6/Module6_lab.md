@@ -33,15 +33,15 @@ In this lab we will use a bacterial data set to demonstrate genome assembly. Thi
 First, lets create and move to a directory that we'll use to work on our assemblies:
 
 ```
-mkdir -p ~/workspace/Module5
-cd ~/workspace/Module5
+mkdir -p ~/workspace/Module6
+cd ~/workspace/Module6
 ```
 
 For convenience, we'll make symbolic links to the data sets that we'll work with. Run this command from the terminal, which will find all of the sequencing data sets we provided (using the `ls` command) and symlink those files into your current working directory.
 
 
 ```
-ls ~/CourseData/CG_data/Module5/ecoli* | xargs -i ln -s {}
+ls ~/CourseData/HT_data/Module6/ecoli* | xargs -i ln -s {}
 ```
 
 If you run `ls` you should now be able to see three files of sequencing data.
@@ -109,10 +109,10 @@ The accuracy of the genome assembly is determined by how many misassemblies (lar
 Run QUAST on your three E. coli assemblies by running this command:
 
 ```
-quast.py -R ~/CourseData/CG_data/Module5/references/ecoli_k12.fasta assemblies/*.fasta
+quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
-Using the web browser for your instance, open the QUAST PDF report (Module5/quast_results/latest/report.pdf) and try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
+Using the web browser for your instance, open the QUAST PDF report (Module6/quast_results/latest/report.pdf) and try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
 
 ## Assembly Polishing
 
@@ -133,7 +133,7 @@ cp ecoli_medaka_polished/consensus.fasta assemblies/ecoli.nanopore.100x.canu-con
 Now, re-run the QUAST step from above:
 
 ```
-quast.py -R ~/CourseData/CG_data/Module5/references/ecoli_k12.fasta assemblies/*.fasta
+quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
-The report will be updated in Module5/quast_results/latest/report.pdf (all versions will also be stored in their own time-stamped directories in Module5/quast_results). Did the quality of your nanopore assembly improve?
+The report will be updated in Module6/quast_results/latest/report.pdf (all versions will also be stored in their own time-stamped directories in Module6/quast_results). Did the quality of your nanopore assembly improve?
