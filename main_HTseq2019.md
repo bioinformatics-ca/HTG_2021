@@ -19,9 +19,7 @@ The course schedule can be found [here](https://bioinformaticsdotca.github.io/ht
 
 Meet your faculty [here]()
 
-You can find all of the [lecture material here](https://drive.google.com/a/bioinformatics.ca/file/d/1blBOuv5Ssh6NumkLdXUEzFGMUom11KgY/view?usp=sharing)
-
-**CLASS MATERIALS:** You can download and print the course manual [here]().  
+**CLASS MATERIALS:** You can download and print the course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1blBOuv5Ssh6NumkLdXUEzFGMUom11KgY/view?usp=sharing).  
 
 ***
 
