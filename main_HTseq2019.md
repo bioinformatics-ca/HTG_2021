@@ -52,13 +52,13 @@ Coming soon.
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1c9GhQEzqpxhpEg7FMjI3uG7H-s9Zf-P3/view?usp=sharing)
 
 ## Module 2: Data Visualization
 
 *<font color="#827e9c">TBD</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Hy8x5ZexnP9Wvri0vGZzHLLRiIrXU8Ia/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab)
 
@@ -66,11 +66,11 @@ Coming soon.
 
 *<font color="#827e9c">Guillaume Bourque</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1APBQV9SvvU2PUiNS3o4tEBz9DAeuHNmB/view?usp=sharing)
 
 [Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
 
-[Lecture]()  
+[Lecture - AWS](https://drive.google.com/a/bioinformatics.ca/file/d/18avla7ZXf7j4zBvKYjoYiZnuf7kbPzeP/view?usp=sharing)  
 
 * We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. The certificates will be uploaded to Slack. If you plan on using Linux or Mac OS X, Please use CBWHT.pem; Otherwise if you plan on using Windows (with Putty), please use CBWHT.ppk.
 
@@ -90,7 +90,7 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 *<font color="#827e9c">Guillaume Bourque</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/100_N2hRYbybxPx_HX7KFMvU8N7s3OfRd/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module4_lab)  
 
@@ -98,7 +98,7 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 *<font color="#827e9c">Guillaume Bourque</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1foZ4PoOeID9JCCnIQhgEhsCVcKyIHZu2/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
 
@@ -106,7 +106,7 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1_WWMbe_0s328OJ1ZPEZSs6l3-NyhgBxB/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab)
 
