@@ -13,7 +13,7 @@ length: 2 days
 
 # Welcome <a id="welcome"></a>
 
-Welcome to Informatics for High-throughput Sequencing Data 2019 workshop.  
+[Welcome](https://drive.google.com/a/bioinformatics.ca/file/d/11ycZOIktKiIMcSiXRPhgIOnYfMw5GPga/view?usp=sharing) to Informatics for High-throughput Sequencing Data 2019 workshop.  
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_schedule).
 
