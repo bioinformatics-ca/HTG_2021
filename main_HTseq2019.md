@@ -17,7 +17,7 @@ Welcome to Informatics for High-throughput Sequencing Data 2019 workshop.
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_schedule).
 
-Meet your faculty [here]()
+Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1vUEx9XPRKPTOrenb_6dfsbsa_j_c5XcS/view?usp=sharing)
 
 **CLASS MATERIALS:** You can download and print the course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1blBOuv5Ssh6NumkLdXUEzFGMUom11KgY/view?usp=sharing).  
 
