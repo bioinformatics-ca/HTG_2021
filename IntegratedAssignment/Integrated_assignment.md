@@ -62,7 +62,7 @@ export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
 rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
 cd $WORK_DIR
-ln -s ~/CourseData/HT_data/Module3/* .
+ln -fs ~/CourseData/HT_data/Module3/* .
 
 # Load the software modules
 module load \
