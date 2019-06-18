@@ -36,24 +36,46 @@ The fastq files are in the following directory of the cloud instance: ~/CourseDa
 
 ### Environment setup
 
+```bash
+# Start a fresh docker container:
+docker run \  
+  -it \
+  --privileged \
+  --network host \  
+  --user $UID:$GROUPS \
+  -w $PWD \
+  -v /tmp:/tmp \
+  -v $HOME:$HOME \
+  -v /media:/media \
+  -v /etc/group:/etc/group \
+  -v /etc/passwd:/etc/passwd \
+  c3genomics/genpipes:0.8
 ```
-#set up
-export SOFT_DIR=/usr/local/
-export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
-export TRIMMOMATIC_JAR=$SOFT_DIR/Trimmomatic-0.36/trimmomatic-0.36.jar
-export PICARD_JAR=$SOFT_DIR/picard/picard.jar
-export GATK_JAR=$SOFT_DIR/gatk-4.0.1.2/gatk-package-4.0.1.2-local.jar
-export GATK_OLD_JAR=~/CourseData/HT_data/software/GenomeAnalysisTK-3.8/GenomeAnalysisTK.jar
-export BVATOOLS_JAR=~/CourseData/HT_data/software/bvatools-1.6/bvatools-1.6-full.jar
-export REF=$WORK_DIR/reference/
 
+Then inside the docker container:
+
+```bash
+#set up environment variables
+export REF=$WORK_DIR/reference/
+export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
 
 rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
 cd $WORK_DIR
-ln -s ~/CourseData/HT_data/Module3/* .
+ln -fs ~/CourseData/HT_data/Module3/* .
 
+# Load the software modules
+module load \
+ mugqic/java/openjdk-jdk1.8.0_72 \
+ mugqic/bvatools/1.6 \
+ mugqic/trimmomatic/0.36 \
+ mugqic/samtools/1.9 \
+ mugqic/bwa/0.7.17 \
+ mugqic/GenomeAnalysisTK/4.1.0.0 \
+ mugqic/R_Bioconductor/3.5.0_3.7
 ```
+
+
 Task list:
 
 1. Check read QC

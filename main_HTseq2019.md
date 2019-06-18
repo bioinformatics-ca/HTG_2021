@@ -56,7 +56,7 @@ Coming soon.
 
 ## Module 2: Data Visualization
 
-*<font color="#827e9c">TBD</font>* 
+*<font color="#827e9c">Rob Syme</font>* 
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Hy8x5ZexnP9Wvri0vGZzHLLRiIrXU8Ia/view?usp=sharing)
 

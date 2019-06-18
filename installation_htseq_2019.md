@@ -51,7 +51,7 @@ version
 
 6) Java -The visualization program that we will be using (IGV) requires Java. Check if you have Java installed: https://www.java.com/verify/ and download Java if you do not have it installed (You need Java 11).
 
-7) Integrative Genomics Viewer 2.45.x (IGV) - Once java is installed, go to https://software.broadinstitute.org/software/igv/download Click on the appropriate launch button that matches your computer's operating system.   
+7) Integrative Genomics Viewer 2.4.x (IGV) - Once java is installed, go to https://software.broadinstitute.org/software/igv/download Click on the appropriate launch button that matches your computer's operating system.   
 
 8) SSH client - Mac and Linux users already have a command line ssh program that can be run from the terminal. For Windows users, please download [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html).  
 
