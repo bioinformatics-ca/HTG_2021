@@ -24,7 +24,7 @@ java -Xmx1G -jar ${BVATOOLS_JAR} readsqc \
 
 # Trim Reads
 
-cat $REF/adapters.fa
+cat reference/adapters.fa
 
 mkdir -p reads/NA12892/
 
