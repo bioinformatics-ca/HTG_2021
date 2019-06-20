@@ -144,7 +144,7 @@ java  -Xmx2G -jar ${GATK_OLD_JAR} \
   --summaryCoverageThreshold 50 \
   --summaryCoverageThreshold 100 \
   --start 1 --stop 500 --nBins 499 -dt NONE \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -o alignment/NA12892/NA12892.sorted.dup.recal.coverage \
   -I alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
@@ -153,7 +153,7 @@ java  -Xmx2G -jar ${GATK_OLD_JAR} \
 
 
 java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -I alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -O alignment/NA12892/NA12892.sorted.dup.recal.metric.insertSize.tsv \
   -H alignment/NA12892/NA12892.sorted.dup.recal.metric.insertSize.histo.pdf \
@@ -166,7 +166,7 @@ java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
 # head -9  alignment/NA12892/NA12892.sorted.dup.recal.metric.insertSize.tsv | tail -3 | cut -f5,6
 
 java -Xmx2G -jar ${GATK_JAR} CollectAlignmentSummaryMetrics \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -I alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -O alignment/NA12892/NA12892.sorted.dup.recal.metric.alignment.tsv \
   --METRIC_ACCUMULATION_LEVEL LIBRARY
@@ -191,7 +191,7 @@ java -Xmx1G -jar ${BVATOOLS_JAR} readsqc \
 
 #trim
 
-cat $REF/adapters.fa
+cat reference/adapters.fa
 
 mkdir -p reads/NA12891/
 
@@ -219,7 +219,7 @@ mkdir -p alignment/NA12891/
 
 bwa mem -M -t 2 \
   -R '@RG\tID:NA12891\tSM:NA12891\tLB:NA12891\tPU:runNA12891_1\tCN:Broad Institute\tPL:ILLUMINA' \
-  ${REF}/hg19.fa \
+  reference/hg19.fa \
   reads/NA12891/NA12891_CBW_chr1_R1.t20l32.fastq.gz \
   reads/NA12891/NA12891_CBW_chr1_R2.t20l32.fastq.gz \
   | java -Xmx2G -jar ${GATK_JAR} SortSam \
@@ -243,14 +243,14 @@ samtools view -c -F4 alignment/NA12891/NA12891.sorted.bam
 # 1- Find the targets 2- Realign them.
 java -Xmx2G  -jar ${GATK_OLD_JAR} \
   -T RealignerTargetCreator \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -o alignment/NA12891/realign.intervals \
   -I alignment/NA12891/NA12891.sorted.bam \
   -L chr1
 
 java -Xmx2G -jar ${GATK_OLD_JAR} \
   -T IndelRealigner \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -targetIntervals alignment/NA12891/realign.intervals \
   -o alignment/NA12891/NA12891.realigned.sorted.bam \
   -I alignment/NA12891/NA12891.sorted.bam
@@ -275,7 +275,7 @@ java -Xmx2G -jar ${GATK_JAR} MarkDuplicates \
 
 # Recalibration
 java -Xmx2G -jar ${GATK_JAR} BaseRecalibrator \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   --known-sites ${REF}/dbSNP_135_chr1.vcf.gz \
   -L chr1:17704860-18004860 \
   -O alignment/NA12891/NA12891.sorted.dup.recalibration_report.grp \
@@ -311,7 +311,7 @@ java  -Xmx2G -jar ${GATK_OLD_JAR} \
   --summaryCoverageThreshold 50 \
   --summaryCoverageThreshold 100 \
   --start 1 --stop 500 --nBins 499 -dt NONE \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -o alignment/NA12891/NA12891.sorted.dup.recal.coverage \
   -I alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
@@ -320,7 +320,7 @@ java  -Xmx2G -jar ${GATK_OLD_JAR} \
 
 
 java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -I alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -O alignment/NA12891/NA12891.sorted.dup.recal.metric.insertSize.tsv \
   -H alignment/NA12891/NA12891.sorted.dup.recal.metric.insertSize.histo.pdf \
@@ -333,7 +333,7 @@ java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
 # head -9  alignment/NA12891/NA12891.sorted.dup.recal.metric.insertSize.tsv | tail -3 | cut -f5,6
 
 java -Xmx2G -jar ${GATK_JAR} CollectAlignmentSummaryMetrics \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -I alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -O alignment/NA12891/NA12891.sorted.dup.recal.metric.alignment.tsv \
   --METRIC_ACCUMULATION_LEVEL LIBRARY
