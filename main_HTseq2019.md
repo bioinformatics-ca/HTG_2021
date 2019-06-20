@@ -70,13 +70,9 @@ Coming soon.
 ## Places to Eat
 
 - Pizza Bros https://www.pizzeriabros.ca (1212 Avenue Union)   
-
 - Falafel avenue http://falafelavenue.com/en/ (2020, rue Robert-Bourassa (at University)   
-
 - Japote: http://www.japote.ca (1000 Rue Sherbrooke Ouest)   
-
 - Opanio: https://www.opianomtl.com (1115 Sherbrooke St W)   
-
 - KoaLua: http://www.koalua.ca (1212 Avenue Union)   
 
 ## Module 3: Genome Alignment
