@@ -67,6 +67,8 @@ It is in your best interest to complete these before the workshop.
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab)
 
+[Lab Answer Key](https://bioinformaticsdotca.github.io/htseq_2019_Module2_lab_answers)
+
 ## Places to Eat
 
 - Pizza Bros https://www.pizzeriabros.ca (1212 Avenue Union)   
