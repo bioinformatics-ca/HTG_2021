@@ -127,15 +127,17 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 [Supplemental](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab_supplement)
 
+## Post Workshop 
+
+Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_post-workshop)  
+
 ***
 
 Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey]().
 
 ***
 
-## Post Workshop 
 
-Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_post-workshop)  
 
   
   
