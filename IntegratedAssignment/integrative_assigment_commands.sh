@@ -52,7 +52,7 @@ mkdir -p alignment/NA12892/
 
 bwa mem -M -t 2 \
   -R '@RG\tID:NA12892\tSM:NA12892\tLB:NA12892\tPU:runNA12892_1\tCN:Broad Institute\tPL:ILLUMINA' \
-  ${REF}/hg19.fa \
+  reference/hg19.fa \
   reads/NA12892/NA12892_CBW_chr1_R1.t20l32.fastq.gz \
   reads/NA12892/NA12892_CBW_chr1_R2.t20l32.fastq.gz \
   | java -Xmx2G -jar ${GATK_JAR} SortSam \
@@ -76,14 +76,14 @@ samtools view -c -F4 alignment/NA12892/NA12892.sorted.bam
 # 1- Find the targets 2- Realign them.
 java -Xmx2G  -jar ${GATK_OLD_JAR} \
   -T RealignerTargetCreator \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -o alignment/NA12892/realign.intervals \
   -I alignment/NA12892/NA12892.sorted.bam \
   -L chr1
 
 java -Xmx2G -jar ${GATK_OLD_JAR} \
   -T IndelRealigner \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -targetIntervals alignment/NA12892/realign.intervals \
   -o alignment/NA12892/NA12892.realigned.sorted.bam \
   -I alignment/NA12892/NA12892.sorted.bam
@@ -108,14 +108,14 @@ java -Xmx2G -jar ${GATK_JAR} MarkDuplicates \
 
 # Recalibration
 java -Xmx2G -jar ${GATK_JAR} BaseRecalibrator \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   --known-sites ${REF}/dbSNP_135_chr1.vcf.gz \
   -L chr1:17704860-18004860 \
   -O alignment/NA12892/NA12892.sorted.dup.recalibration_report.grp \
   -I alignment/NA12892/NA12892.sorted.dup.bam
 
 java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -bqsr alignment/NA12892/NA12892.sorted.dup.recalibration_report.grp \
   -O alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -I alignment/NA12892/NA12892.sorted.dup.bam
