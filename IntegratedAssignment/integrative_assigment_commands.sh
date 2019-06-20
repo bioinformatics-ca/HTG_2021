@@ -1,18 +1,7 @@
 # Start a fresh docker container:
-docker run \  
-  -it \
-  --privileged \
-  --network host \  
-  --user $UID:$GROUPS \
-  -w $PWD \
-  -v /tmp:/tmp \
-  -v $HOME:$HOME \
-  -v /media:/media \
-  -v /etc/group:/etc/group \
-  -v /etc/passwd:/etc/passwd \
-  c3genomics/genpipes:0.8
-  
-#set up environment variables
+docker run --privileged -v /tmp:/tmp --network host -it -w $PWD -v $HOME:$HOME -v /media:/media --user $UID:$GROUPS -v /etc/group:/etc/group -v /etc/passwd:/etc/passwd c3genomics/genpipes:0.8
+
+  #set up environment variables
 export REF=$WORK_DIR/reference/
 export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
 
@@ -22,14 +11,7 @@ cd $WORK_DIR
 ln -fs ~/CourseData/HT_data/Module3/* .
 
 # Load the software modules
-module load \
- mugqic/java/openjdk-jdk1.8.0_72 \
- mugqic/bvatools/1.6 \
- mugqic/trimmomatic/0.36 \
- mugqic/samtools/1.9 \
- mugqic/bwa/0.7.17 \
- mugqic/GenomeAnalysisTK/4.1.0.0 \
- mugqic/R_Bioconductor/3.5.0_3.7
+module load mugqic/java/openjdk-jdk1.8.0_72 mugqic/bvatools/1.6 mugqic/trimmomatic/0.36 mugqic/samtools/1.9 mugqic/bwa/0.7.17 mugqic/GenomeAnalysisTK/4.1.0.0 mugqic/R_Bioconductor/3.5.0_3.7
 # Parent 1
 
 # Quality
