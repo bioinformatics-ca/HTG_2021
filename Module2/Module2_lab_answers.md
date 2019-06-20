@@ -5,7 +5,9 @@ title: HTseq Module 2 Lab Answers
 header1: Workshop Pages for Students
 header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 2 Lab Answers
 image: /site_images/CBW_High-throughput_icon.jpg
-home:
+home: https://bioinformaticsdotca.github.io/htseq_2019
+modified: June 20, 2019
+---
 
 # Module 2 - IGV Lab Answers
 
