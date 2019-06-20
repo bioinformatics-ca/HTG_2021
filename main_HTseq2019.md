@@ -48,6 +48,11 @@ Coming soon.
 
 *<font color="#827e9c">Michelle Brazas</font>*
 
+## WiFi  
+
+1) Eduroam account; or    
+2) Sign up for a McGill 24hr account at : https://www.mcgill.ca/it/get-help/forms/guest-wifi   
+
 ## Module 1: Introduction to High-throughput Sequencing
 
 *<font color="#827e9c">Jared Simpson</font>* 
