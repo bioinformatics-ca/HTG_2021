@@ -142,7 +142,10 @@ java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
 
 
 # Extract Metrics
-java  -Xmx2G -jar ${GATK_OLD_JAR} \
+module unload  mugqic/GenomeAnalysisTK/4.1.0.0
+module load mugqic/GenomeAnalysisTK/3.8
+
+java  -Xmx2G -jar ${GATK_JAR} \
   -T DepthOfCoverage \
   --omitDepthOutputAtEachBase \
   --summaryCoverageThreshold 10 \
@@ -154,6 +157,9 @@ java  -Xmx2G -jar ${GATK_OLD_JAR} \
   -o alignment/NA12892/NA12892.sorted.dup.recal.coverage \
   -I alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
+  
+module unload mugqic/GenomeAnalysisTK/3.8
+module load  mugqic/GenomeAnalysisTK/4.1.0.0
   
 ## less -S alignment/NA12892/NA12892.sorted.dup.recal.coverage.sample_interval_summary
 
@@ -247,21 +253,25 @@ samtools view -c -F4 alignment/NA12891/NA12891.sorted.bam
 
 # Indel realignment
 # 1- Find the targets 2- Realign them.
-java -Xmx2G  -jar ${GATK_OLD_JAR} \
+module unload  mugqic/GenomeAnalysisTK/4.1.0.0
+module load mugqic/GenomeAnalysisTK/3.8
+
+java -Xmx2G  -jar ${GATK_JAR} \
   -T RealignerTargetCreator \
   -R reference/hg19.fa \
   -o alignment/NA12891/realign.intervals \
   -I alignment/NA12891/NA12891.sorted.bam \
   -L chr1
 
-java -Xmx2G -jar ${GATK_OLD_JAR} \
+java -Xmx2G -jar ${GATK_JAR} \
   -T IndelRealigner \
   -R reference/hg19.fa \
   -targetIntervals alignment/NA12891/realign.intervals \
   -o alignment/NA12891/NA12891.realigned.sorted.bam \
   -I alignment/NA12891/NA12891.sorted.bam
-
-
+  
+module load mugqic/GenomeAnalysisTK/3.8
+module unload  mugqic/GenomeAnalysisTK/4.1.0.0
 
 # FixMates (optional, see Module 3 main page for explanation)
 #java -Xmx2G -jar ${PICARD_JAR} FixMateInformation \
@@ -309,6 +319,9 @@ java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
 
 
 # Extract Metrics
+module unload  mugqic/GenomeAnalysisTK/4.1.0.0
+module load mugqic/GenomeAnalysisTK/3.8
+
 java  -Xmx2G -jar ${GATK_JAR} \
   -T DepthOfCoverage \
   --omitDepthOutputAtEachBase \
@@ -321,6 +334,10 @@ java  -Xmx2G -jar ${GATK_JAR} \
   -o alignment/NA12891/NA12891.sorted.dup.recal.coverage \
   -I alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
+  
+ module load mugqic/GenomeAnalysisTK/3.8
+ module unload  mugqic/GenomeAnalysisTK/4.1.0.0
+
   
 ## less -S alignment/NA12891/NA12891.sorted.dup.recal.coverage.sample_interval_summary
 
