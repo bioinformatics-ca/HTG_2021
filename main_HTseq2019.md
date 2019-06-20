@@ -133,5 +133,9 @@ Thank you for attending the Informatics on High-Throughput Sequencing Data works
 
 ***
 
+## Post Workshop 
+
+Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_post-workshop)  
+
   
   
