@@ -35,7 +35,7 @@ java -Xmx2G -cp $TRIMMOMATIC_JAR org.usadellab.trimmomatic.TrimmomaticPE -thread
   reads/NA12892/NA12892_CBW_chr1_S1.t20l32.fastq.gz \
   reads/NA12892/NA12892_CBW_chr1_R2.t20l32.fastq.gz \
   reads/NA12892/NA12892_CBW_chr1_S2.t20l32.fastq.gz \
-  ILLUMINACLIP:${REF}/adapters.fa:2:30:15 TRAILING:20 MINLEN:32 \
+  ILLUMINACLIP:reference/adapters.fa:2:30:15 TRAILING:20 MINLEN:32 \
   2> reads/NA12892/NA12892.trim.out
 
 cat reads/NA12892/NA12892.trim.out
