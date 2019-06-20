@@ -74,20 +74,25 @@ samtools view -c -F4 alignment/NA12892/NA12892.sorted.bam
 
 # Indel realignment
 # 1- Find the targets 2- Realign them.
-java -Xmx2G  -jar ${GATK_OLD_JAR} \
+
+#switch to old GATK 3.8
+module unload  mugqic/GenomeAnalysisTK/4.1.0.0
+module load mugqic/GenomeAnalysisTK/3.8
+java -Xmx2G  -jar ${GATK_JAR} \
   -T RealignerTargetCreator \
   -R reference/hg19.fa \
   -o alignment/NA12892/realign.intervals \
   -I alignment/NA12892/NA12892.sorted.bam \
   -L chr1
 
-java -Xmx2G -jar ${GATK_OLD_JAR} \
+java -Xmx2G -jar ${GATK_JAR} \
   -T IndelRealigner \
   -R reference/hg19.fa \
   -targetIntervals alignment/NA12892/realign.intervals \
   -o alignment/NA12892/NA12892.realigned.sorted.bam \
   -I alignment/NA12892/NA12892.sorted.bam
-
+module unload mugqic/GenomeAnalysisTK/3.8
+module load  mugqic/GenomeAnalysisTK/4.1.0.0
 
 
 # FixMates (optional, see Module 3 main page for explanation)
@@ -102,6 +107,7 @@ java -Xmx2G -jar ${GATK_JAR} MarkDuplicates \
   -I alignment/NA12892/NA12892.realigned.sorted.bam \
   -O alignment/NA12892/NA12892.sorted.dup.bam \
   --METRICS_FILE=alignment/NA12892/NA12892.sorted.dup.metrics
+ 
 
 # less alignment/NA12892/NA12892.sorted.dup.metrics
 
@@ -129,7 +135,7 @@ java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
 #java -Xmx2G -jar ${GATK_JAR} \
 #  -T PrintReads \
 #  -nct 2 \
-#  -R ${REF}/hg19.fa \
+#  -R reference/hg19.fa \
 #  -BQSR alignment/NA12892/NA12892.sorted.dup.recalibration_report.grp \
 #  -o alignment/NA12892/NA12892.sorted.dup.recal.bam \
 #  -I alignment/NA12892/NA12892.sorted.dup.bam
@@ -202,7 +208,7 @@ java -Xmx2G -cp $TRIMMOMATIC_JAR org.usadellab.trimmomatic.TrimmomaticPE -thread
   reads/NA12891/NA12891_CBW_chr1_S1.t20l32.fastq.gz \
   reads/NA12891/NA12891_CBW_chr1_R2.t20l32.fastq.gz \
   reads/NA12891/NA12891_CBW_chr1_S2.t20l32.fastq.gz \
-  ILLUMINACLIP:${REF}/adapters.fa:2:30:15 TRAILING:20 MINLEN:32 \
+  ILLUMINACLIP:reference/adapters.fa:2:30:15 TRAILING:20 MINLEN:32 \
   2> reads/NA12891/NA12891.trim.out
 
 cat reads/NA12891/NA12891.trim.out
@@ -282,7 +288,7 @@ java -Xmx2G -jar ${GATK_JAR} BaseRecalibrator \
   -I alignment/NA12891/NA12891.sorted.dup.bam
 
 java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
-  -R ${REF}/hg19.fa \
+  -R reference/hg19.fa \
   -bqsr alignment/NA12891/NA12891.sorted.dup.recalibration_report.grp \
   -O alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -I alignment/NA12891/NA12891.sorted.dup.bam
@@ -303,7 +309,7 @@ java -Xmx2G -jar ${GATK_JAR} ApplyBQSR \
 
 
 # Extract Metrics
-java  -Xmx2G -jar ${GATK_OLD_JAR} \
+java  -Xmx2G -jar ${GATK_JAR} \
   -T DepthOfCoverage \
   --omitDepthOutputAtEachBase \
   --summaryCoverageThreshold 10 \
