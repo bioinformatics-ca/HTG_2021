@@ -33,8 +33,8 @@ In this lab we will use a bacterial data set to demonstrate genome assembly. Thi
 First, lets create and move to a directory that we'll use to work on our assemblies:
 
 ```
-mkdir -p ~/workspace/Module6
-cd ~/workspace/Module6
+mkdir -p ~/workspace/HTseq/Module6
+cd ~/workspace/HTseq/Module6
 ```
 
 For convenience, we'll make symbolic links to the data sets that we'll work with. Run this command from the terminal, which will find all of the sequencing data sets we provided (using the `ls` command) and symlink those files into your current working directory.
