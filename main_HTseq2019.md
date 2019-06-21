@@ -133,7 +133,7 @@ Post workshop content for data sets, docker containers, AWS image, tools and ins
 
 ***
 
-Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey]().
+Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey](https://forms.gle/Eqg1eDz3ANTk5YBX7).
 
 ***
 
