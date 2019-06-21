@@ -121,7 +121,7 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1_WWMbe_0s328OJ1ZPEZSs6l3-NyhgBxB/view?usp=sharing)
+[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1vo_LdjYgZI93tIHHzUdKbS7dU4QKEGBb/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab)
 
