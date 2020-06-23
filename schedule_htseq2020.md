@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /htseq_2019_schedule
+permalink: /htseq_2020_schedule
 title: HT-Seq
 header1: Workshop Pages for Students
 header2: Informatics on High-Throughput Sequencing Data
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
+home: https://bioinformaticsdotca.github.io/htseq_2020
 ---
 
 | | **Day 1** | | **Day 2** |
