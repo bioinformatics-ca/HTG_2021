@@ -1,25 +1,24 @@
 ---
 layout: workshop_main_2day
-permalink: /htseq_2019
+permalink: /htseq_2020
 title: HTseq
 header1: Workshop Pages for Students
 header2: Informatics on High-Throughput Sequencing Data
 image: /site_images/CBW_High-throughput_icon.jpg
 keywords: Map sequence data, De Novo assembly tasks, Quantify sequence data
 description: Course covers the bioinformatics tools available for managing and interpreting high-throughput sequencing data, where the focus is on Illumina reads although information is applicable to all sequencer reads. 
-instructors: Jared Simpson, Guillaume Bourque, Pascale Marquis
+instructors: Jared Simpson, Mathieu Bourgey
 length: 2 days
 ---
 
 # Welcome <a id="welcome"></a>
 
-[Welcome](https://drive.google.com/a/bioinformatics.ca/file/d/11ycZOIktKiIMcSiXRPhgIOnYfMw5GPga/view?usp=sharing) to Informatics for High-throughput Sequencing Data 2019 workshop.  
+Welcome (comming soon)
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_schedule).
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_schedule).
 
-Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1vUEx9XPRKPTOrenb_6dfsbsa_j_c5XcS/view?usp=sharing)
-
-**CLASS MATERIALS:** You can download and print the course manual [here](https://drive.google.com/a/bioinformatics.ca/file/d/1blBOuv5Ssh6NumkLdXUEzFGMUom11KgY/view?usp=sharing).  
+Meet your faculty (comming soon)
+  
 
 ***
 
@@ -27,18 +26,18 @@ Meet your faculty [here](https://drive.google.com/a/bioinformatics.ca/file/d/1vU
 
 ## Laptop Setup Instructions
 
-Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_installation).
+Instructions to setup your laptop can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_installation).
 
 ## Pre-workshop Tutorials
 
-Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/htseq_2019_prework).  
+Pre-readings and pre-work can be found here [here](https://bioinformaticsdotca.github.io/htseq_2020_prework).  
 It is in your best interest to complete these before the workshop.
 
 ***
 
 # Class Photo
  
-<img src="https://github.com/bioinformaticsdotca/HTseq_2019/blob/master/ClassPhoto_HTseq2019_v2.jpg?raw=true" alt="Class Photo" width="750" />
+(Comming soon)
 
 ***
 
@@ -46,12 +45,8 @@ It is in your best interest to complete these before the workshop.
 
 ## Welcome
 
-*<font color="#827e9c">Michelle Brazas</font>*
+*<font color="#827e9c">Rachade Hmamouchi</font>*
 
-## WiFi  
-
-1) Eduroam account; or    
-2) Sign up for a McGill 24hr account at : https://www.mcgill.ca/it/get-help/forms/guest-wifi   
 
 ## Module 1: Introduction to High-throughput Sequencing
 
@@ -68,14 +63,7 @@ It is in your best interest to complete these before the workshop.
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab)
 
 [Lab Answer Key](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab_answers)   
-
-## Places to Eat
-
-- Pizza Bros https://www.pizzeriabros.ca (1212 Avenue Union)   
-- Falafel avenue http://falafelavenue.com/en/ (2020, rue Robert-Bourassa (at University)   
-- Japote: http://www.japote.ca (1000 Rue Sherbrooke Ouest)   
-- Opanio: https://www.opianomtl.com (1115 Sherbrooke St W)   
-- KoaLua: http://www.koalua.ca (1212 Avenue Union)   
+  
 
 ## Module 3: Genome Alignment
 
@@ -129,11 +117,11 @@ You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/pr
 
 ## Post Workshop 
 
-Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2019_post-workshop)  
+Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_post-workshop)  
 
 ***
 
-Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey](https://forms.gle/Eqg1eDz3ANTk5YBX7).
+Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey]
 
 ***
 
