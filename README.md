@@ -1,2 +1,2 @@
-# HTseq_2019
-workshop content for HTseq 2019
+# HTseq_2020
+workshop content for HTseq 2020
