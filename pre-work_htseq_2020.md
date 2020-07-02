@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /htseq_2019_prework
+permalink: /htseq_2020_prework
 title: HTseq PreWork
 header1: Workshop Pages for Students
-header2: Informatics for High-throughput Sequencing Data Analysis 2019 Pre-Work
+header2: Informatics for High-throughput Sequencing Data Analysis 2020 Pre-Work
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
+home: https://bioinformaticsdotca.github.io/htseq_2020
 ---
 
 ## Pre-workshop Tutorials
@@ -25,7 +25,6 @@ It is in your best interest to complete these before the workshop.
 * [Unix Cheat sheet](http://www.rain.org/~mkummel/unix.html) 
 
 3) [Sequencing Terminology](http://www.ncbi.nlm.nih.gov/projects/genome/glossary.shtml)
-
 
 
 ## Pre-workshop Readings  
