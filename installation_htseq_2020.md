@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /htseq_2019_installation
+permalink: /htseq_2020_installation
 title: HTseq Installation Instructions
 header1: Workshop Pages for Students
-header2: Informatics for High-throughput Sequencing Data Analysis 2019 Installation Instructions
+header2: Informatics for High-throughput Sequencing Data Analysis 2020 Installation Instructions
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
+home: https://bioinformaticsdotca.github.io/htseq_2020
 ---
 
 ## Installation Instructions
