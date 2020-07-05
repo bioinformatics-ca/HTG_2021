@@ -46,3 +46,16 @@ Compute Canada software stack is mounted on the cluster. It uses limux *module* 
 Jupyter Hub is available at [https://jupyter.cbw.calculquebec.cloud](https://jupyter.cbw.calculquebec.cloud/). You should be able to use the cluster through your browser. Please use your username and password to login. You will be asked to request resources after you log in and then you will be on one of the compute nodes. You can also download/upload files through jupyter hub.</br>
 ![](https://github.com/bioinformatics-ca/RNAseq_2020/blob/master/jupyter.png)</br>
 **It is important to __*log out*__ once you finish jupyter hub to release the resources. If you only close the browser window, your jupyter hub is still running and using the resources.**
+
+## copy files to your local machine
+- use Jupyterhub described above.
+- use scp command (Linux/Mac): 
+```bash
+scp <your username>@login1.CBW.calculquebec.cloud:<path to your file> .
+```
+- use software which supports sftp like FileZilla
+    + Host: login1.CBW.calculquebec.cloud
+    + Username: your username
+    + Password: your password
+    + Port: 22
+![](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/filezilla.png)
