@@ -71,13 +71,7 @@ It is in your best interest to complete these before the workshop.
 
 [Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1APBQV9SvvU2PUiNS3o4tEBz9DAeuHNmB/view?usp=sharing)
 
-[Lab Practical: Connecting to the Cloud](http://bioinformaticsdotca.github.io/AWS_setup)
-
-[Lecture - AWS](https://drive.google.com/a/bioinformatics.ca/file/d/18avla7ZXf7j4zBvKYjoYiZnuf7kbPzeP/view?usp=sharing)  
-
-* We have set up instances on the Amazon cloud - one for each student. In order to log in to your instance, you will need a security certificate. The certificates will be uploaded to Slack. If you plan on using Linux or Mac OS X, Please use CBWHT.pem; Otherwise if you plan on using Windows (with Putty), please use CBWHT.ppk.
-
-You can also download from here. [Mac/Linux certificate](http://ht.oicrcbw.ca/private/CBWHT.pem), [Windows certificate](http://ht.oicrcbw.ca/private/CBWHT.ppk).
+Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module3_lab)  
 
