@@ -47,7 +47,7 @@ Jupyter Hub is available at [https://jupyter.cbw.calculquebec.cloud](https://jup
 ![](https://github.com/bioinformatics-ca/RNAseq_2020/blob/master/jupyter.png)</br>
 **It is important to __*log out*__ once you finish jupyter hub to release the resources. If you only close the browser window, your jupyter hub is still running and using the resources.**
 
-## copy files to your local machine
+## Copy files to your local machine
 - use Jupyterhub described above.
 - use scp command (Linux/Mac): 
 ```bash
@@ -58,4 +58,5 @@ scp <your username>@login1.CBW.calculquebec.cloud:<path to your file> .
     + Username: your username
     + Password: your password
     + Port: 22
+<br>
 ![](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/filezilla.png)
