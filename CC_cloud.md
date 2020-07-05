@@ -58,5 +58,5 @@ scp <your username>@login1.CBW.calculquebec.cloud:<path to your file> .
     + Username: your username
     + Password: your password
     + Port: 22
-<br>
+
 ![](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/filezilla.png)
