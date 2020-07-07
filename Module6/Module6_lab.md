@@ -28,6 +28,18 @@ In this lab we will perform de novo genome assembly of a bacterial genome using 
 
 In this lab we will use a bacterial data set to demonstrate genome assembly. This data set consists of sequencing reads for Escherichia coli. E. coli is a great data set for getting started on genome assembly as it is a small genome (4.6 Mbp) with relatively few repeats, and has a high quality reference. We have provided Illumina, PacBio and Oxford Nanopore reads for this genome. The assemblies you will run later using `spades` and `canu` use a read set that is restricted to a one megabase region of the E. coli genome. This is to reduce the amount of compute time the assemblies take, so that they complete during this lab. Running a whole genome assembly uses the exact same set of commands and the results you will obtain are comparable to assembling the entire genome.
 
+## Loading Required Software
+
+To run the software we will use in this tutorial, we need to load them using the `module` command. This command allows us to use software that the administrators of this course installed for us. Run the following commands to load the software we need. If you logout of the system any time during this tutorial, you will need to re-run these commands to load the software again.
+
+```
+module load spades
+module load abyss
+module load canu
+module load medaka
+module load mugqic/Quast/5.0.2
+```
+
 ## Data Preparation
 
 First, lets create and move to a directory that we'll use to work on our assemblies:
@@ -70,36 +82,31 @@ We can now start assessing the quality of our assembly. We typically measure the
 We'll use `abyss-fac.pl` to calculate how contiguous our spades assembly is. Typically there will be a lot of short "leftover" contigs consisting of repetitive or low-complexity sequence, or reads with a very high error rate that could not be assembled. We don't want to include these in our statistics so we'll only use contigs that are at least 500bp in length (protip: piping tabular data into `column -t` will format the output so the columns nicely line up):
 
 ```
-abyss-fac.pl -t 500 assemblies/ecoli.illumina.50x.spades-contigs.fasta | column -t
+abyss-fac -t 500 assemblies/ecoli.illumina.50x.spades-contigs.fasta | column -t
 ```
 
 The N50 statistic is the most commonly used measure of assembly contiguity. An N50 of x means that 50% of the assembly is represented in contigs x bp or longer. What is the N50 of the spades assembly? How many contigs were produced?
 
 ## E. coli Genome Assembly with Long Reads
 
-Now, we'll use long sequencing reads to assemble the E. coli genome. Long sequencing reads are better at resolving repeats and typically give much more contiguous assemblies. Long reads have a much higher error rate than short reads though, so we need to use a different assembly strategy. In this tutorial, we'll use [canu](https://github.com/marbl/canu) to assemble the 100X PacBio dataset. The canu assembly of the pacbio data should take about 15 minutes on your computer (maybe take a break while it is running).  Run this command to generate the assembly:
+Now, we'll use long sequencing reads to assemble the E. coli genome. Long sequencing reads are better at resolving repeats and typically give much more contiguous assemblies. Long reads have a much higher error rate than short reads though, so we need to use a different assembly strategy. For this tutorial, we used [canu](https://github.com/marbl/canu) to assemble the 100X PacBio dataset. The canu assembly of the pacbio data takes about an hour so we aren't going to run it for this course. We've provided the command below in case you want to run it after the course. Instead, we will copy the assembly the instructors ran before the course into your `assemblies` directory so you can compare the short and long read assembly.
 
 ```
-canu -fast -p ecoli-pacbio-canu -d ecoli-pacbio-auto genomeSize=1.0m -pacbio-raw ecoli.pacbio.100x.fastq
+# command used to make the pacbio assembly - this is an example, you shouldn't run it now
+#canu -fast useGrid=0 -p ecoli-pacbio-canu -d ecoli-pacbio-auto genomeSize=1.0m -pacbio-raw ecoli.pacbio.100x.fastq
+
+# copy the assembly the instructors made to your assemblies directory
+cp ~/CourseData/HT_data/Module6/results_2020/ecoli.pacbio.100x.canu-contigs.fasta assemblies/
 ```
 
-When it completes, copy the Pacbio assembly to our results directory:
+Our data set also includes an Oxford Nanopore data set. Here is the command used to generate the assembly. Again, rather than running it now (it takes one hour as well) we'll just copy the result we made before the course:
 
 ```
-# Copy the pacbio assembly from canu's directory
-cp ecoli-pacbio-auto/ecoli-pacbio-canu.contigs.fasta assemblies/ecoli.pacbio.100x.canu-contigs.fasta
-```
+# assemble Oxford Nanopore data with canu - this is an example, you shouldn't run it now
+#canu -fast useGrid=0 -p ecoli-nanopore-canu -d ecoli-nanopore-auto genomeSize=1.0m -nanopore-raw ecoli.nanopore.100x.fastq
 
-Our data set also includes an Oxford Nanopore data set. We can assemble the genome using canu, this time providing command line arguments specific to nanopore data.
-
-```
-canu -fast -p ecoli-nanopore-canu -d ecoli-nanopore-auto genomeSize=1.0m -nanopore-raw ecoli.nanopore.100x.fastq
-```
-
-Now let's copy the assembly:
-
-```
-cp ecoli-nanopore-auto/ecoli-nanopore-canu.contigs.fasta assemblies/ecoli.nanopore.100x.canu-contigs.fasta
+# copy the assembly
+cp ~/CourseData/HT_data/Module6/results_2020/ecoli.nanopore.100x.canu-contigs.fasta assemblies/
 ```
 
 ## Assessing the Quality of your Assemblies using a Reference
@@ -112,7 +119,9 @@ Run QUAST on your three E. coli assemblies by running this command:
 quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
-Using the web browser for your instance, open the QUAST PDF report (Module6/quast_results/latest/report.pdf) and try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
+The QUAST results are in a PDF file. Using the method you learned earlier (scp or FileZilla) copy the results to your local computer. The QUAST report is located at `~/workspace/HTseq/Module6/quast_results/latest/report.pdf`.
+
+Using the report, try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
 
 ## Assembly Polishing
 
@@ -121,7 +130,7 @@ Both the nanopore and pacbio assemblies have errors in their consensus sequence 
 We're now going to use `medaka` to improve our assembly. Medaka uses a neural network which is trained to calculate a better consensus sequence for nanopore assemblies.
 
 ```
-medaka_consensus -i ecoli.nanopore.100x.fastq -d assemblies/ecoli.nanopore.100x.canu-contigs.fasta -o ecoli_medaka_polished -t 4 -m r941_flip235
+medaka_consensus -i ecoli.nanopore.100x.fastq -d assemblies/ecoli.nanopore.100x.canu-contigs.fasta -o ecoli_medaka_polished -t 4 -m r941_min_high_g303
 ```
 
 Now we can copy the medaka assembly to our output directory:
