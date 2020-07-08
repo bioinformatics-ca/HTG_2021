@@ -3,12 +3,12 @@ layout: tutorial_page
 permalink: /htseq_2019_module6_lab
 title: HTseq 2019 Module 6 Lab
 header1: Workshop Pages for Students
-header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 6 Lab
+header2: Informatics for High-throughput Sequencing Data Analysis 2020 Module 6 Lab
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
+home: https://bioinformaticsdotca.github.io/htseq_2020
 description: HTseq 2019 Module 6 Lab
 author: Jared Simpson
-modified: March 5th, 2019
+modified: June, 2020
 ---
 
 # Genome Assembly for Short and Long Reads
