@@ -89,7 +89,7 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 [Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module4_lab)  
 
 ## Module 5: Structural Variant Calling
 
