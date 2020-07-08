@@ -36,8 +36,6 @@ To run the software we will use in this tutorial, we need to load them using the
 module load spades
 module load abyss
 module load canu
-module load medaka
-module load mugqic/Quast/5.0.2
 ```
 
 ## Data Preparation
@@ -79,7 +77,7 @@ We can now start assessing the quality of our assembly. We typically measure the
 - Completeness: Most of the genome should be assembled into contigs with few regions missing from the assembly (remember for this exercise we are only assembling one megabase of the genome, not the entire genome)
 - Accuracy: The assembly should have few large-scale *misassemblies* and *consensus errors* (mismatches or insertions/deletions)
 
-We'll use `abyss-fac.pl` to calculate how contiguous our spades assembly is. Typically there will be a lot of short "leftover" contigs consisting of repetitive or low-complexity sequence, or reads with a very high error rate that could not be assembled. We don't want to include these in our statistics so we'll only use contigs that are at least 500bp in length (protip: piping tabular data into `column -t` will format the output so the columns nicely line up):
+We'll use `abyss-fac` to calculate how contiguous our spades assembly is. Typically there will be a lot of short "leftover" contigs consisting of repetitive or low-complexity sequence, or reads with a very high error rate that could not be assembled. We don't want to include these in our statistics so we'll only use contigs that are at least 500bp in length (protip: piping tabular data into `column -t` will format the output so the columns nicely line up):
 
 ```
 abyss-fac -t 500 assemblies/ecoli.illumina.50x.spades-contigs.fasta | column -t
@@ -113,7 +111,13 @@ cp ~/CourseData/HT_data/Module6/results_2020/ecoli.nanopore.100x.canu-contigs.fa
 
 The accuracy of the genome assembly is determined by how many misassemblies (large-scale rearrangements) and consensus errors (mismatches, insertions or deletions) the assembler makes. Calculating the accuracy of an assembly typically requires the use of a reference genome. We will use the [QUAST](http://quast.bioinf.spbau.ru/) software package to assess the accuracy of the assemblies.
 
-Run QUAST on your three E. coli assemblies by running this command:
+First, let's load QUAST:
+
+```
+module load mugqic/Quast/5.0.2
+```
+
+Now, run QUAST on your three E. coli assemblies by running this command:
 
 ```
 quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
@@ -125,9 +129,17 @@ Using the report, try to determine which of the assemblies was a) the most compl
 
 ## Assembly Polishing
 
-Both the nanopore and pacbio assemblies have errors in their consensus sequence as indicated by the "mismatches per 100kb" and "indels per 100kb" lines in the QUAST output. To help improve the accuracy of the assembly, we can use a post-assembly consensus improvement step called "polishing". There are many assembly polishing programs available for both pacbio data (racon, arrow) and nanopore data (nanopolish, racon). To demonstrate polishing we will use a program called `medaka` that is particularly fast and easy to run. While we're only polishing the nanopore assembly today as a demonstration, please note that the pacbio assembly could also be improved by polishing it with arrow.
+Both the nanopore and pacbio assemblies have errors in their consensus sequence as indicated by the "mismatches per 100kb" and "indels per 100kb" lines in the QUAST output. To help improve the accuracy of the assembly, we can use a post-assembly consensus improvement step called "polishing". There are many assembly polishing programs available for both pacbio data (racon, arrow) and nanopore data (nanopolish, racon). To demonstrate polishing we will use a program called `medaka` that is particularly fast and easy to run. While we're only polishing the nanopore assembly today as a demonstration, please note that the pacbio assembly could also be improved by polishing it with arrow, or using high-accuracy HiFi reads.
 
 We're now going to use `medaka` to improve our assembly. Medaka uses a neural network which is trained to calculate a better consensus sequence for nanopore assemblies.
+
+Let's load Medaka, and some other programs it requires:
+
+```
+module load mugqic/Medaka/1.0.3 mugqic/minimap2/2.17 mugqic/bcftools/1.10.2 mugqic/samtools/1.10
+```
+
+Now we can run it to polish the genome:
 
 ```
 medaka_consensus -i ecoli.nanopore.100x.fastq -d assemblies/ecoli.nanopore.100x.canu-contigs.fasta -o ecoli_medaka_polished -t 4 -m r941_min_high_g303
