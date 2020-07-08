@@ -73,7 +73,7 @@ It is in your best interest to complete these before the workshop.
 
 Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module3_lab) 
 
 ## Integrated Assignment
 
