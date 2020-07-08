@@ -15,7 +15,7 @@ length: 2 days
 
 Welcome (comming soon)
 
-The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_schedule).
+The course schedule can be found [here]()
 
 Meet your faculty (comming soon)
   
@@ -52,32 +52,32 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1c9GhQEzqpxhpEg7FMjI3uG7H-s9Zf-P3/view?usp=sharing)
+[Lecture]()
 
 ## Module 2: Data Visualization
 
 *<font color="#827e9c">Rob Syme</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1Hy8x5ZexnP9Wvri0vGZzHLLRiIrXU8Ia/view?usp=sharing)
+[Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab)
+[Lab Practical]()
 
-[Lab Answer Key](https://bioinformaticsdotca.github.io/htseq_2019_module2_lab_answers)   
+[Lab Answer Key]()   
   
 
 ## Module 3: Genome Alignment
 
-*<font color="#827e9c">Guillaume Bourque</font>* 
+*<font color="#827e9c">Mathieu Bourgey</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1APBQV9SvvU2PUiNS3o4tEBz9DAeuHNmB/view?usp=sharing)
+[Lecture]()
 
 Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module3_lab)  
+[Lab Practical]()  
 
 ## Integrated Assignment
 
-[Integrated Assignment](https://bioinformaticsdotca.github.io/htseq_2019_IA)    
+[Integrated Assignment]()    
 
 ***
 
@@ -85,38 +85,34 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 ## Module 4: Small-Variant Calling and Annotation
 
-*<font color="#827e9c">Guillaume Bourque</font>* 
+*<font color="#827e9c">Mathieu Bourgey</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/100_N2hRYbybxPx_HX7KFMvU8N7s3OfRd/view?usp=sharing)
+[Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module4_lab)  
+[Lab Practical]()  
 
 ## Module 5: Structural Variant Calling
 
-*<font color="#827e9c">Guillaume Bourque</font>* 
+*<font color="#827e9c">Mathieu Bourgey</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1foZ4PoOeID9JCCnIQhgEhsCVcKyIHZu2/view?usp=sharing)
+[Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
+[Lab Practical]()  
 
 ## Module 6: De Novo Assembly
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture](https://drive.google.com/a/bioinformatics.ca/file/d/1JmpTr9EaNONNwFmC5MpHP7C1dorrM3_5/view?usp=sharing)
+[Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab)
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module6_lab)
 
-[Supplemental](https://bioinformaticsdotca.github.io/htseq_2019_module6_lab_supplement)
+[Supplemental](https://bioinformaticsdotca.github.io/htseq_2020_module6_lab_supplement)
 
 ## Post Workshop 
-
-Post workshop content for data sets, docker containers, AWS image, tools and install instructions can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_post-workshop)  
-
 ***
 
-Thank you for attending the Informatics on High-Throughput Sequencing Data workshop! Help us make this workshop better by filling out [our survey]
-
+## Survey
 ***
 
 
