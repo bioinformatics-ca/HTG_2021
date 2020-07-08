@@ -13,7 +13,7 @@ length: 2 days
 
 # Welcome <a id="welcome"></a>
 
-Welcome (comming soon)
+Welcome (coming soon)
 
 The course schedule can be found [here]()
 
@@ -93,7 +93,7 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 ## Module 5: Structural Variant Calling
 
-*<font color="#827e9c">Mathieu Bourgey</font>* 
+*<font color="#827e9c">Rob Syme</font>* 
 
 [Lecture]()
 
