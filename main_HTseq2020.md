@@ -15,7 +15,7 @@ length: 2 days
 
 Welcome (coming soon)
 
-The course schedule can be found [here]()
+The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_schedule)
 
 Meet your faculty (comming soon)
   
