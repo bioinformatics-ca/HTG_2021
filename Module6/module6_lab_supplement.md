@@ -1,14 +1,14 @@
 ---
 layout: tutorial_page
-permalink: /htseq_2019_module6_lab_supplement
-title: HTseq 2019 Module 6 Lab Supplement
+permalink: /htseq_2020_module6_lab_supplement
+title: HTseq 2020 Module 6 Lab Supplement
 header1: Workshop Pages for Students
-header2: Informatics for High-throughput Sequencing Data Analysis 2019 Module 6 Lab Supplement
+header2: Informatics for High-throughput Sequencing Data Analysis 2020 Module 6 Lab Supplement
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
-description: HTseq 2019 Module 6 Lab Supplemental
+home: https://bioinformaticsdotca.github.io/htseq_2020
+description: HTseq 2020 Module 6 Lab Supplemental
 author: Jared Simpson
-modified: June 27th, 2018
+modified: June, 2020
 ---
 
 ## Generating a preqc report for the E. coli data set
