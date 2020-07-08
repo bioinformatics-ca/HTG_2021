@@ -60,9 +60,9 @@ It is in your best interest to complete these before the workshop.
 
 [Lecture]()
 
-[Lab Practical]()
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module2_lab)
 
-[Lab Answer Key]()   
+[Lab Answer Key](https://bioinformaticsdotca.github.io/htseq_2020_module2_lab_answers)   
   
 
 ## Module 3: Genome Alignment
@@ -98,7 +98,7 @@ Connecting to the CC Cluster
 
 [Lecture]()
 
-[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module5_lab)  
 
 ## Module 6: De Novo Assembly
 
