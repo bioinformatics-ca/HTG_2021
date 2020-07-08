@@ -69,7 +69,7 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Mathieu Bourgey</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1mD0tmJlTMELSOSrDY-4Z8RIT5kNabgE9/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module3_lab) 
 
