@@ -97,7 +97,7 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 [Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
 
 ## Module 6: De Novo Assembly
 
