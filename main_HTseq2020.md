@@ -71,9 +71,10 @@ It is in your best interest to complete these before the workshop.
 
 [Lecture]()
 
-Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
-
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module3_lab) 
+
+Connecting to the CC Cluster 
+[Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
 
 ## Integrated Assignment
 
@@ -89,7 +90,7 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 [Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module4_lab)  
 
 ## Module 5: Structural Variant Calling
 
@@ -97,7 +98,7 @@ Connecting to the CC Cluster [Lab Practical](https://github.com/bioinformatics-c
 
 [Lecture]()
 
-[Lab Practical]()  
+[Lab Practical](https://bioinformaticsdotca.github.io/htseq_2019_module5_lab)  
 
 ## Module 6: De Novo Assembly
 
