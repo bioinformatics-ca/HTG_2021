@@ -78,7 +78,7 @@ It is in your best interest to complete these before the workshop.
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module3_lab) 
 
-Connecting to the CC Cluster 
+Connecting to the CC Cluster *<font color="#827e9c">Zhibin Lu</font>* 
 
 [Lecture](https://drive.google.com/file/d/1XR6GH_nqNB3BAtsPkZtiy6MRvG-CtMvW/view?usp=sharing)
 
