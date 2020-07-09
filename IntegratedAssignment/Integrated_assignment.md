@@ -96,5 +96,5 @@ Discussion/Questions:
 2. Which software tool can be used for each step
 
 
-The full commands can be downloaded here [solution](https://github.com/bioinformaticsdotca/HTseq_2019/blob/master/IntegratedAssignment/integrative_assigment_commands.sh)
+The full commands can be downloaded here [solution](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/IntegratedAssignment/integrative_assigment_commands.sh)
 
