@@ -96,7 +96,7 @@ Connecting to the CC Cluster
 
 *<font color="#827e9c">Mathieu Bourgey</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1qcDP7Mq8wUrHa-XSiiWtQQZUbNikhMqz/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module4_lab)  
 
