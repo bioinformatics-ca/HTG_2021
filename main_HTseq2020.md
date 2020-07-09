@@ -86,7 +86,7 @@ It is in your best interest to complete these before the workshop.
 
 ## Integrated Assignment
 
-[Integrated Assignment]()    
+[Integrated Assignment](https://bioinformaticsdotca.github.io/htseq_2020_IA)
 
 ***
 
