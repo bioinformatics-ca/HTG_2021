@@ -13,7 +13,6 @@ length: 2 days
 
 # Welcome <a id="welcome"></a>
 
-Welcome (coming soon)
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_schedule)
 
@@ -47,12 +46,18 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Rachade Hmamouchi</font>*
 
+## Compute Canada Introduction
+
+*<font color="#827e9c">Pierre-Olivier Quirion</font>* 
+
+[Presentation]( https://tinyurl.com/cbwcq0709)
+
 
 ## Module 1: Introduction to High-throughput Sequencing
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1p0pZBTSaDg-81MGthWd-hAYERGrgE-30/view?usp=sharing)
 
 ## Module 2: Data Visualization
 
@@ -74,6 +79,9 @@ It is in your best interest to complete these before the workshop.
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module3_lab) 
 
 Connecting to the CC Cluster 
+
+[Lecture](https://drive.google.com/file/d/1XR6GH_nqNB3BAtsPkZtiy6MRvG-CtMvW/view?usp=sharing)
+
 [Lab Practical](https://github.com/bioinformatics-ca/HTseq_2020/blob/master/CC_cloud.md)
 
 ## Integrated Assignment
