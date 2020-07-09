@@ -1,9 +1,8 @@
 # Start a fresh docker container:
-docker run --privileged -v /tmp:/tmp --network host -it -w $PWD -v $HOME:$HOME -v /media:/media --user $UID:$GROUPS -v /etc/group:/etc/group -v /etc/passwd:/etc/passwd c3genomics/genpipes:0.8
 
-  #set up environment variables
-export REF=$WORK_DIR/reference/
+#set up environment variables
 export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
+export REF=$WORK_DIR/reference/
 
 rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
@@ -20,7 +19,6 @@ java -Xmx1G -jar ${BVATOOLS_JAR} readsqc \
   --read1 raw_reads/NA12892/NA12892_CBW_chr1_R1.fastq.gz \
   --read2 raw_reads/NA12892/NA12892_CBW_chr1_R2.fastq.gz \
   --threads 2 --regionName ACTL8 --output originalQC_NA12892/
-
 
 # Trim Reads
 
@@ -63,13 +61,12 @@ bwa mem -M -t 2 \
   --MAX_RECORDS_IN_RAM=500000
 
 
-
 # Explore the bam files
 samtools view alignment/NA12892/NA12892.sorted.bam | head -n4
 
 # Count the *un-aligned* reads
 samtools view -c -f4 alignment/NA12892/NA12892.sorted.bam
-# Count the *aligned* reads 
+# Count the *aligned* reads
 samtools view -c -F4 alignment/NA12892/NA12892.sorted.bam
 
 # Indel realignment
@@ -107,7 +104,7 @@ java -Xmx2G -jar ${GATK_JAR} MarkDuplicates \
   -I alignment/NA12892/NA12892.realigned.sorted.bam \
   -O alignment/NA12892/NA12892.sorted.dup.bam \
   --METRICS_FILE=alignment/NA12892/NA12892.sorted.dup.metrics
- 
+
 
 # less alignment/NA12892/NA12892.sorted.dup.metrics
 
@@ -157,10 +154,10 @@ java  -Xmx2G -jar ${GATK_JAR} \
   -o alignment/NA12892/NA12892.sorted.dup.recal.coverage \
   -I alignment/NA12892/NA12892.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
-  
+
 module unload mugqic/GenomeAnalysisTK/3.8
 module load  mugqic/GenomeAnalysisTK/4.1.0.0
-  
+
 ## less -S alignment/NA12892/NA12892.sorted.dup.recal.coverage.sample_interval_summary
 
 
@@ -172,8 +169,6 @@ java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
   --METRIC_ACCUMULATION_LEVEL LIBRARY
 
 
-
-  
 ## less -S alignment/NA12892/NA12892.sorted.dup.recal.metric.insertSize.tsv
 # head -9  alignment/NA12892/NA12892.sorted.dup.recal.metric.insertSize.tsv | tail -3 | cut -f5,6
 
@@ -188,9 +183,7 @@ java -Xmx2G -jar ${GATK_JAR} CollectAlignmentSummaryMetrics \
 # head -10  alignment/NA12892/NA12892.sorted.dup.recal.metric.alignment.tsv | tail -4 | cut -f7
 
 
-
-  
-### parent 2
+### Parent 2
 
 
 # Quality
@@ -201,7 +194,7 @@ java -Xmx1G -jar ${BVATOOLS_JAR} readsqc \
   --threads 2 --regionName ACTL8 --output originalQC_NA12891/
 
 
-#trim
+# Trim
 
 cat reference/adapters.fa
 
@@ -248,7 +241,7 @@ samtools view alignment/NA12891/NA12891.sorted.bam | head -n4
 
 # Count the *un-aligned* reads
 samtools view -c -f4 alignment/NA12891/NA12891.sorted.bam
-# Count the *aligned* reads 
+# Count the *aligned* reads
 samtools view -c -F4 alignment/NA12891/NA12891.sorted.bam
 
 # Indel realignment
@@ -269,7 +262,7 @@ java -Xmx2G -jar ${GATK_JAR} \
   -targetIntervals alignment/NA12891/realign.intervals \
   -o alignment/NA12891/NA12891.realigned.sorted.bam \
   -I alignment/NA12891/NA12891.sorted.bam
-  
+
 module load mugqic/GenomeAnalysisTK/3.8
 module unload  mugqic/GenomeAnalysisTK/4.1.0.0
 
@@ -334,11 +327,11 @@ java  -Xmx2G -jar ${GATK_JAR} \
   -o alignment/NA12891/NA12891.sorted.dup.recal.coverage \
   -I alignment/NA12891/NA12891.sorted.dup.recal.bam \
   -L chr1:17700000-18100000
-  
+
  module load mugqic/GenomeAnalysisTK/3.8
  module unload  mugqic/GenomeAnalysisTK/4.1.0.0
 
-  
+
 ## less -S alignment/NA12891/NA12891.sorted.dup.recal.coverage.sample_interval_summary
 
 
@@ -351,7 +344,7 @@ java -Xmx2G -jar ${GATK_JAR} CollectInsertSizeMetrics \
 
 
 
-  
+
 ## less -S alignment/NA12891/NA12891.sorted.dup.recal.metric.insertSize.tsv
 # head -9  alignment/NA12891/NA12891.sorted.dup.recal.metric.insertSize.tsv | tail -3 | cut -f5,6
 
@@ -364,8 +357,3 @@ java -Xmx2G -jar ${GATK_JAR} CollectAlignmentSummaryMetrics \
 
 ## less -S alignment/NA12891/NA12891.sorted.dup.recal.metric.alignment.tsv
 # head -10  alignment/NA12891/NA12891.sorted.dup.recal.metric.alignment.tsv | tail -4 | cut -f7
-
-
-
-
-

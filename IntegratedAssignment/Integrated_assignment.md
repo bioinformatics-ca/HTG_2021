@@ -1,11 +1,11 @@
 ---
 layout: tutorial_page
-permalink: /htseq_2019_IA
+permalink: /htseq_2020_IA
 title: HTseq Integrated Assignment
 header1: Workshop Pages for Students
-header2: Informatics for High-throughput Sequencing Data Analysis 2019 Integrated Assignment
+header2: Informatics for High-throughput Sequencing Data Analysis 2020 Integrated Assignment
 image: /site_images/CBW_High-throughput_icon.jpg
-home: https://bioinformaticsdotca.github.io/htseq_2019
+home: https://bioinformaticsdotca.github.io/htseq_2020
 ---
 
 
@@ -17,7 +17,7 @@ home: https://bioinformaticsdotca.github.io/htseq_2019
 
 # CBW HT-seq Integrative Assignment
 
- 
+
 Written originally by Mathieu Bourgey, edited by Florence Cavalli
 
 
@@ -32,33 +32,39 @@ The fastq files are in the following directory of the cloud instance: ~/CourseDa
  * raw_reads/NA12892/NA12892_CBW_chr1_R1.fastq.gz
  * raw_reads/NA12892/NA12892_CBW_chr1_R2.fastq.gz
 ```
-
-
 ### Environment setup
 
+### Accessing a working node
+
+When you log into the server, you are assigned to a "login" node (sometimes called a "head node"), which is shared by other users who are also logged in. As these nodes are a shared resouces, running computationally heavy workloads here can make the system unstable for everybody. In order to run your analysis in a stable environment without affecting other user you need to access a work node (sometimes called a "compute node"). Usually each job shoule be launched through the scheduler to run in a working environment, but our jobs in this workshop as are small and fast, so we can instead launch an interactive session on one of the work nodes by running:
+
 ```bash
-# Start a fresh docker container:
-
-docker run --privileged -v /tmp:/tmp --network host -it -w $PWD -v $HOME:$HOME -v /media:/media --user $UID:$GROUPS -v /etc/group:/etc/group -v /etc/passwd:/etc/passwd c3genomics/genpipes:0.8
-
+salloc --mem 0 -n 8
 ```
 
-Then inside the docker container:
+The salloc command will assign us to a compute node and give us permission to use up to 8 cpus at a time. The interactive session will last for 1h, after which our session will end and we will be returned to the login node.
+
 
 ```bash
 #set up environment variables
-export REF=$WORK_DIR/reference/
-export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
+export WORK_DIR=$HOME/workspace/HTseq/Integrative_Assignment
+export REF=$WORK_DIR/reference
 
 rm -rf $WORK_DIR
 mkdir -p $WORK_DIR
 cd $WORK_DIR
 ln -fs ~/CourseData/HT_data/Module3/* .
 
+
 # Load the software modules
-
-module load mugqic/java/openjdk-jdk1.8.0_72 mugqic/bvatools/1.6 mugqic/trimmomatic/0.36 mugqic/samtools/1.9 mugqic/bwa/0.7.17 mugqic/GenomeAnalysisTK/4.1.0.0 mugqic/R_Bioconductor/3.5.0_3.7
-
+module load \
+  mugqic/java/openjdk-jdk1.8.0_72 \
+  mugqic/bvatools/1.6 \
+  mugqic/trimmomatic/0.36 \
+  mugqic/samtools/1.9 \
+  mugqic/bwa/0.7.17 \
+  mugqic/GenomeAnalysisTK/4.1.0.0 \
+  mugqic/R_Bioconductor/3.5.0_3.7
 ```
 
 
@@ -87,12 +93,8 @@ Discussion/Questions:
 
 1. Explain the purpose of each step
 
-2. Which software tool can be used for each step 
-
-
+2. Which software tool can be used for each step
 
 
 The full commands can be downloaded here [solution](https://github.com/bioinformaticsdotca/HTseq_2019/blob/master/IntegratedAssignment/integrative_assigment_commands.sh)
-
-
 
