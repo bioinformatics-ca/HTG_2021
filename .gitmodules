@@ -8,3 +8,6 @@
 	path = CBW_HTseq_module5
 	url = https://github.com/robsyme/CBW_HTseq_module5
 	branch = master
+[submodule "CBW_HTseq_module2"]
+	path = CBW_HTseq_module2
+	url = https://github.com/robsyme/CBW_HTseq_module2.git
