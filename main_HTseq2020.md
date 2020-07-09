@@ -57,7 +57,7 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1MIqRoyaUkrr9zvliDqqulZpOhIw462wf/view?usp=sharing)
 
 ## Module 2: Data Visualization
 
