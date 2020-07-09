@@ -16,7 +16,7 @@ length: 2 days
 
 The course schedule can be found [here](https://bioinformaticsdotca.github.io/htseq_2020_schedule)
 
-Meet your faculty (comming soon)
+Meet your faculty [here](https://drive.google.com/file/d/1i5MpTG9xTkmYvgSYqvjmQ-WIcskR1RHZ/view?usp=sharing)
   
 
 ***
