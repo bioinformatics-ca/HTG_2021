@@ -63,7 +63,7 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Rob Syme</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1UcSrqedgNe_bsIF1xxzISpQ4mlQFhAkW/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module2_lab)
 
