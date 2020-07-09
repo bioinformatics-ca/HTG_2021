@@ -7,3 +7,4 @@
 [submodule "CBW_HTseq_module5"]
 	path = CBW_HTseq_module5
 	url = https://github.com/robsyme/CBW_HTseq_module5
+	branch = master
