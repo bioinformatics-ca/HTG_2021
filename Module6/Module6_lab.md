@@ -118,7 +118,7 @@ Run QUAST on your three E. coli assemblies by running this command:
 quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
-The QUAST results are in a PDF file. Using the method you learned earlier (scp or FileZilla) copy the results to your local computer. The QUAST report is located at `~/workspace/HTseq/Module6/quast_results/latest/report.pdf`.
+The QUAST results are in an HTML file. Using the method you learned earlier (scp or FileZilla) copy the results to your local computer. The QUAST report is located at `~/workspace/HTseq/Module6/quast_results/latest/report.html`.
 
 Using the report, try to determine which of the assemblies was a) the most complete b) the most contiguous and c) the most accurate.
 
@@ -144,4 +144,4 @@ Now, re-run the QUAST step from above:
 quast.py -R ~/CourseData/HT_data/Module6/references/ecoli_k12.fasta assemblies/*.fasta
 ```
 
-The report will be updated in Module6/quast_results/latest/report.pdf (all versions will also be stored in their own time-stamped directories in Module6/quast_results). Did the quality of your nanopore assembly improve?
+The report will be updated in Module6/quast_results/latest/report.html (all versions will also be stored in their own time-stamped directories in Module6/quast_results). Did the quality of your nanopore assembly improve?
