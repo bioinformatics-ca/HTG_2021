@@ -112,7 +112,7 @@ It is in your best interest to complete these before the workshop.
 
 *<font color="#827e9c">Jared Simpson</font>* 
 
-[Lecture]()
+[Lecture](https://drive.google.com/file/d/1gHX4qw3M4cA9Mcs90c03Zick0suMJRW7/view?usp=sharing)
 
 [Lab Practical](https://bioinformaticsdotca.github.io/htseq_2020_module6_lab)
 
