@@ -36,7 +36,7 @@ It is in your best interest to complete these before the workshop.
 
 # Class Photo
  
-<img src="https://github.com/bioinformaticsdotca/HTseq_2020/blob/master/HTseqClass2020.jpg?raw=true" alt="Class Photo" width="750" />
+<img src="https://github.com/bioinformatics-ca/HTseq_2020/blob/master/HTseqClass2020.jpg?raw=true" alt="Class Photo" width="750" />
 
 
 ***
