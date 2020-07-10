@@ -1,5 +1,3 @@
-# Start a fresh docker container:
-
 #set up environment variables
 export WORK_DIR=~/workspace/HTseq/Integrative_Assignment/
 export REF=$WORK_DIR/reference/
