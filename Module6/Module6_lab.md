@@ -83,7 +83,7 @@ Now, we'll use long sequencing reads to assemble the E. coli genome. Long sequen
 flye --out-dir ecoli_pacbio_flye --threads 4 --pacbio-hifi ecoli_pacbio.fastq
 ```
 
-After the assembly completes, copy it to your aseemblies directory:
+After the assembly completes, copy it to your assemblies directory:
 
 ```
 cp ecoli_pacbio_flye/assembly.fasta assemblies/ecoli_pacbio_flye.fasta
