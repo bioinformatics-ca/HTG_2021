@@ -64,7 +64,7 @@ cp ecoli_illumina_spades/contigs.fasta assemblies/ecoli_illumina_spades.fasta
 We can now start assessing the quality of our assembly. We typically measure the quality of an assembly using three factors:
 
 - Contiguity: Long contigs are better than short contigs as long contigs give more information about the structure of the genome (for example, the order of genes)
-- Completeness: Most of the genome should be assembled into contigs with few regions missing from the assembly (remember for this exercise we are only assembling one megabase of the genome, not the entire genome)
+- Completeness: Most of the genome should be assembled into contigs with few regions missing from the assembly
 - Accuracy: The assembly should have few large-scale *misassemblies* and *consensus errors* (mismatches or insertions/deletions)
 
 We'll use `abyss-fac` to calculate how contiguous our spades assembly is. Typically there will be a lot of short "leftover" contigs consisting of repetitive or low-complexity sequence, or reads with a very high error rate that could not be assembled. We don't want to include these in our statistics so we'll only use contigs that are at least 500bp in length (protip: piping tabular data into `column -t` will format the output so the columns nicely line up):
